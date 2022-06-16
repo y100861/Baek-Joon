@@ -1,0 +1,20 @@
+# 1
+C = int(input())
+for i in range(C):
+  N = list(map(int, input().split())
+  avg = sum(N[1:]) / N[0])
+  cnt=0
+  for n in N[1:]:
+    if n > avg:
+      cnt += 1
+      rate = (cnt / N[0]) * 100
+  print("{:.3f}%".format(rate))
+
+# 2
+C = int(input())
+for i in range(C):
+  N = list(map(int, input().split())
+  avg = sum(N[1:] / N[0])
+  A = [n for n in N[1:] if n > avg]
+  rate = (len(A) / N[0]) * 100
+  print("{:.3f}%".format(rate))
