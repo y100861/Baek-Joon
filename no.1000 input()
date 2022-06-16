@@ -1,3 +1,13 @@
+# 1 
 A, B = input().split() # 1 2
 print(int(A)+int(B))
 -> 3
+
+# 2
+A, B = map(int, input().split())
+-> 10 10
+
+# 3
+import sys
+A = sys.stdin.readline().strip().split()
+A, B = map(int, sys.stdin.readline().split())
