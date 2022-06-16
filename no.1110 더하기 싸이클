@@ -1,0 +1,26 @@
+# 1
+n = int(input())
+new_n = n
+count = 0
+while True:
+  A = new_n//10
+  B = new_n%10
+  C = (A+B)%10
+  new_n = (10*B)+C
+  count += 1
+  if new_n == n:
+    break
+
+# 2
+n = input()
+num = n
+count = 0
+while True:
+  if len(num) == 1:
+    num = "0" + num
+  plus = str(int(num[0]) + int(num[1]))
+  num = num[-1] + plus[-1]
+  count += 1
+  if num == n:
+    print(count)
+    break
