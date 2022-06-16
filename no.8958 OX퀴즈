@@ -1,0 +1,12 @@
+T = int(input())
+for _ in range(T):
+  A = input()
+  cnt = 0
+  score = 0
+  for i in range(len(A)):
+    if A[i] == "O":
+      cnt += 1
+    if A[i] == "X":
+      cnt = 0
+    score += cnt
+  print(score)
