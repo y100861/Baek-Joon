@@ -1,0 +1,22 @@
+# 1
+S = input().lower()
+A = list(set(S))
+B = []
+for a in A:
+    B.append(S.count(a))
+if B.count(max(B)) >= 2:
+    print("?")
+else:
+    print(A[B.index(max(B))].upper())
+    
+# 2
+S = input().lower()
+A = []
+B = []
+for s in S:
+  A.append(s)
+  B.append(A.count(s))
+if B.count(max(B)) >= 2:
+    print("?")
+else:
+    print(A[B.index(max(B))].upper())
