@@ -1,0 +1,11 @@
+N = int(input())
+cnt = N
+for _ in range(N):
+    S = input()
+    for k in range(len(S) - 1):
+        if S[k] != S[k+1]:
+            new_S = S[k+1:]
+            if S[k] in new_S:
+                cnt -= 1
+                break
+print(cnt)
