@@ -1,0 +1,9 @@
+numbers = set(range(1, 10001))
+generated_nums = set()
+for number in numbers:
+    for i in str(number):
+        number += int(i)
+    generated_nums.add(number)
+self_nums = sorted(numbers - generated_nums)
+for k in self_nums:
+    print(k)
