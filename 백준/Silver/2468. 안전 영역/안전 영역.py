@@ -31,7 +31,7 @@ def bfs(i, j):
                 q.append((nx, ny))
 
 result = 0
-for k in range(min(map(min, graph)) - 1, max(map(max, graph))):
+for k in range(max(map(max, graph))):
     visited = [[1] * n for _ in range(n)]
 
     for a in range(n):
